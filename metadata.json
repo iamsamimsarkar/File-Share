@@ -1,0 +1,6 @@
+{
+  "name": "FilePizza — Free Peer-to-Peer File Transfers",
+  "description": "Free peer-to-peer file transfers directly in your browser using WebRTC. Your files never touch our servers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

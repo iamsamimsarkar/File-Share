@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+@keyframes steam {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-40px) scaleX(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-warm {
+  0%, 100% {
+    box-shadow: 0 0 25px -5px rgba(245, 158, 11, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 45px 5px rgba(239, 68, 68, 0.35);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-steam-1 {
+  animation: steam 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+.animate-steam-2 {
+  animation: steam 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite 0.7s;
+}
+
+.animate-steam-3 {
+  animation: steam 2.9s cubic-bezier(0.4, 0, 0.2, 1) infinite 1.4s;
+}
+
+.animate-warm-glow {
+  animation: pulse-warm 4s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 40s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(180, 83, 9, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(180, 83, 9, 0.4);
+}
